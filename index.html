@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <title>My Love</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #FFFFEE;
+            padding: 10px;
+        }
+        #loveHeart {
+            float: left;
+            width: 100%;
+            height:345px;
+        }
+
+        #garden {
+            width: 100%;
+            height: 100%;
+        }
+
+        #words {
+            font-family: "sans-serif";
+            width: 100%;
+            color:#666;
+        }
+
+        #messages{
+            display: none;
+        }
+
+        #elapseClock .digit{
+            font-family: "digit";
+        }
+
+        #loveu{
+            padding: 5px;
+            margin-top: 20px;
+            margin-right: 210px;
+            text-align: right;
+            display: none;
+        }
+    </style>
+
+    <script src="jquery.js"></script>
+    <script src="garden.js"></script>
+    <script src="functions.js"></script>
+
+</head>
+<body>
+
+<div id="img_show" style="position: absolute;left: 0;top: 0;height: 100%;width: 100%;text-align: center;background-color: rgba(0, 0, 0, .5);z-index: 99999;display: none">
+    <img src="images/16.jpg" style="width: 320px;margin-top: 70px">
+</div>
+
+<div id="image_area" style="margin-top: 20px;font-size: 0;text-align: center">
+    <div>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 155px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px;">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 42px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 155px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 42px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 42px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <span style="width: 63px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 93px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 42px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <span style="width: 63px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 93px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 42px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+    <div style="margin-top: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <span style="width: 30px;display: inline-block;"></span>
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+        <img src="images/16.jpg" style="width: 16px;height: 16px;margin-left: 5px">
+    </div>
+</div>
+
+<div id="loveHeart">
+    <canvas id="garden"></canvas>
+    <div id="words">
+        <div id="messages">
+            Scorpio is the strongest of<br> all the star sighs.<br>
+            这个天蝎是Super Buddy...
+        </div>
+        <div id="loveu">
+            <div class="signature">by 胡子大叔</div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2;
+    var together = new Date();
+    together.setFullYear(2018, 3, 2);
+    together.setHours(20);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            startHeartAnimation();
+        }, 1000);
+
+        timeElapse(together);
+        setInterval(function () {
+            timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+
+    $('#image_area img').bind('click', function () {
+        $('#img_show img').attr('src', $(this).attr('src'))
+        $('#img_show').show();
+    })
+
+    $('#img_show').bind('click', function () {
+        $(this).hide()
+    })
+</script>
+</body>
+</html>
